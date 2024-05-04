@@ -1,0 +1,120 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #e08958;
+  // fixed 元素的位置在螢幕滾動時不會改變位置
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// stroke-dasharray是把stroke做成了是虛線的效果
+// 而stroke-dashoffset屬性是將上面的虛線推移，兩者會有以下幾點特性：
+
+// 推移後，dasharray還是會保持循環。
+// dashoffset的值不會大於dasharray。
+// 如果dashoffset 等於 dasharray，線段起始點會是空白。
+
+#first {
+  stroke-dasharray: 459px;
+  stroke-dashoffset: 459px;
+  // ease-in：緩慢的開始
+  animation: fadeInside 0.6s ease-in forwards;
+}
+
+#second {
+  stroke-dasharray: 418;
+  stroke-dashoffset: 418;
+  //                                      延遲0.4s進行
+  animation: fadeInside 0.6s ease-in forwards 0.4s;
+}
+
+#third {
+  stroke-dasharray: 413;
+  stroke-dashoffset: 413;
+  animation: fadeInside 0.6s ease-in forwards 0.8s;
+}
+
+#fourth {
+  stroke-dasharray: 371;
+  stroke-dashoffset: 371;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#fifth {
+  stroke-dasharray: 224;
+  stroke-dashoffset: 224;
+  animation: fadeInside 0.6s ease-in forwards 1.6s;
+}
+
+// 第二段文字延遲動畫設定與英文一起開始,秒數控制盡量同時結束
+#sixth {
+  stroke-dasharray: 1386;
+  stroke-dashoffset: 1386;
+  animation: fadeInside 0.6s ease-in forwards ;
+}
+
+#seventh {
+  stroke-dasharray: 1133;
+  stroke-dashoffset: 1133;
+  animation: fadeInside 0.6s ease-in forwards 0.3s;
+}
+
+#eighth {
+  stroke-dasharray: 1174;
+  stroke-dashoffset: 1174;
+  animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#ninth {
+  stroke-dasharray: 1389;
+  stroke-dashoffset: 1389;
+  animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+
+#tenth {
+  stroke-dasharray: 606;
+  stroke-dashoffset: 606;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#eleventh {
+  stroke-dasharray: 1284;
+  stroke-dashoffset: 1284;
+  animation: fadeInside 0.6s ease-in forwards 1.5s;
+}
+
+#twelfth {
+  stroke-dasharray: 1210;
+  stroke-dashoffset: 1210;
+  animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+svg {
+  animation: fill 1s ease-in forwards 1.8s;
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+
+
+//  none與white距離無法辨識
+@keyframes fill {
+  from {
+    // transparent 透明的
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+

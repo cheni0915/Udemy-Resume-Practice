@@ -1,0 +1,103 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+header {
+	background-color: #c4c4c4;
+	padding: 1rem;
+}
+
+header h1 {
+	font-size: 2.5rem;
+}
+
+header h1 i {
+	font-size: 3rem;
+}
+
+nav {
+	background-color: #312f2f;
+	padding: 1rem;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #c4c4c4;
+	margin: 1rem;
+	font-size: 1.25rem;
+	transition: 0.3s ease;
+}
+
+nav ul li a i {
+	font-size: 1.75rem;
+}
+
+nav ul li a:hover {
+	color: white;
+}
+
+.active {
+	color:goldenrod
+}
+
+section.container {
+	display: flex;
+}
+
+section.container a {
+	color: rgba(4, 214, 151, 0.623);
+	text-decoration: none;
+}
+
+section.left {
+	padding: 2rem;
+}
+
+section.right {
+	padding: 2rem;
+}
+
+section.right h3 {
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+section.right iframe {
+	/* 邊界圓弧度 */
+	border-radius: 2rem;
+}
+
+.special {
+	text-align: center;
+	font-size: 1.35rem;
+	color: red;
+	/* auto的意思在這裡是剩下的可用空間， */
+	margin: auto;
+}
+
+section.center {
+	display: flex;
+	margin: 2rem;
+}
+
+section.center p {
+	padding: 1rem;
+}
+
+.svg-div {
+	text-align: center; /* 讓圖片水平置中 */
+}
+
+.group {
+	max-width: 100%; /* 最大寬度為容器的100% */
+ 	max-height: 100%; /* 最大高度為容器的100% */
+	margin-top: 2rem;
+}
